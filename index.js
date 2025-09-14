@@ -4,6 +4,9 @@ const progressBar = document.getElementById("progress-bar");
 slider.addEventListener("change", (e) => {
     updateProgress(e.target.value);
 });
+slider.addEventListener("input", (e) => {
+    updateProgress(e.target.value);
+});
 function updateProgress(value) {
     progress.textContent = value;
     progressBar.style.width = `${value}%`;
