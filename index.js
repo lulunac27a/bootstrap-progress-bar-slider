@@ -1,14 +1,18 @@
-const slider = document.getElementById("slider");
-const progress = document.getElementById("progress");
-const progressBar = document.getElementById("progress-bar");
+const slider = document.getElementById("slider"); //slider element
+const progress = document.getElementById("progress"); //progress text
+const progressBar = document.getElementById("progress-bar"); //progress bar element
 slider.addEventListener("change", (e) => {
-    updateProgress(e.target.value);
+    //when slider value is changed
+    updateProgress(e.target.value); //update progress
 });
 slider.addEventListener("input", (e) => {
-    updateProgress(e.target.value);
+    //when slider value is changed
+    updateProgress(e.target.value); //update progress
 });
+
 function updateProgress(value) {
-    progress.textContent = value;
-    progressBar.style.width = `${value}%`;
-    progressBar.setAttribute("aria-valuenow", value);
+    //function to update progress
+    progress.textContent = value; //set progress text
+    progressBar.style.width = `${value}%`; //set progress bar width
+    progressBar.setAttribute("aria-valuenow", value); //set aria value
 }
