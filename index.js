@@ -1,5 +1,6 @@
 const slider = document.getElementById("slider"); //slider element
 const progress = document.getElementById("progress"); //progress text
+const progress2 = document.getElementById("progress2"); //progress text
 const progressBar = document.getElementById("progress-bar"); //progress bar element
 slider.addEventListener("change", (e) => {
     //when slider value is changed
@@ -13,6 +14,7 @@ slider.addEventListener("input", (e) => {
 function updateProgress(value) {
     //function to update progress
     progress.textContent = value; //set progress text
+    progress2.textContent = value; //set progress text
     progressBar.style.width = `${value}%`; //set progress bar width
     progressBar.setAttribute("aria-valuenow", value); //set aria value
 }
