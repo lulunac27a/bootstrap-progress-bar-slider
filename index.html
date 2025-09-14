@@ -1,15 +1,29 @@
 <html>
-    <head>
-        <title>Bootstrap Progress Bar with Slider</title>
-    </head>
-    <body>
-        <div class="container">
-            Progress: <span id="progress">0</span>%<br>
-            <input type="range" min="0" max="100" value="0" id="slider" onchange="updateProgress(this.value)">
-            <div class="progress" role="progressbar" aria-label="Progress bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
-            </div>
-        </div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <title>Bootstrap Progress Bar with Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      Progress: <span id="progress">0</span>%<br />
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        id="slider"
+        onchange="updateProgress(this.value)"
+      />
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Progress bar"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
